@@ -36,3 +36,5 @@ java Main
 Hello, Git!
 Git repository is configured successfully!
 ```
+## Статус выполнения
+- [x] task1-git: ✅ Выполнено
