@@ -1,4 +1,4 @@
-package task1-git;
+package task1_git;
 
 /**
  * Простой Java класс для проверки настройки Git
