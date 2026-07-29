@@ -6,7 +6,9 @@ package task1-git;
  */
 public class Main {
     public static void main(String[] args) {
+
         System.out.println("Hello, Git!");
         System.out.println("Git repository is configured successfully!");
+        System.out.println("Task1-git completed! ✅");
     }
 }
