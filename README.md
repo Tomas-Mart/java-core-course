@@ -1,29 +1,31 @@
-## 📚 Домашние задания
+# Java Core Course
 
-Репозиторий для выполнения домашних заданий по курсу Java Core.
+## Overview
 
-### 📊 Прогресс
+Repository for Java Core course homework assignments.
 
-- [x] task1-git - Настройка Git репозитория
-- [ ] task2-stringbuilder - StringBuilder с паттерном Snapshot
-- [ ] task3-collections - Кастомные коллекции
-- [ ] task4-concurrency - Многопоточность
+## Progress
+
+- [x] task1-git - Git repository setup
+- [ ] task2-stringbuilder - StringBuilder with Snapshot pattern
+- [ ] task3-collections - Custom collections
+- [ ] task4-concurrency - Multithreading
 - [ ] task5-streams - Stream API
-- [ ] task6-maven - Maven проект
+- [ ] task6-maven - Maven project
 
-### 📁 Структура
+## Project Structure
 
 ```text
 src/
-├── task1-git/ # ✅ Задача 1: Git
-├── task2-stringbuilder/ # ⏳ Задача 2: Java Core
-├── task3-collections/ # ⏳ Задача 3: Collections
-├── task4-concurrency/ # ⏳ Задача 4: Concurrency
-├── task5-streams/ # ⏳ Задача 5: Stream API
-└── task6-maven/ # ⏳ Задача 6: Maven
+├── task1_git/
+├── task2_stringbuilder/
+├── task3_collections/
+├── task4_concurrency/
+├── task5_streams/
+└── task6_maven/
 ```
 
-### 🛠️ Технологии
+## Technologies
 
 - Java 17+
 - Git

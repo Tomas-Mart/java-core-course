@@ -50,3 +50,6 @@ mvnw.cmd
 gradle-wrapper.jar
 gradlew
 gradlew.bat
+
+# Test files
+src/test/

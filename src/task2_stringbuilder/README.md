@@ -1,88 +1,74 @@
-# Задание #2: Реализация StringBuilder с паттерном Snapshot
+# Task 2: StringBuilder with Snapshot Pattern
 
-## 📝 Описание
+## Description
 
-Реализация кастомного `StringBuilder` с поддержкой паттерна **Snapshot (Memento)** и методом `undo()` для отмены операций.
+Custom StringBuilder implementation with Snapshot (Memento) pattern support and undo operation.
 
----
+## Implemented Methods
 
-## 🎯 Реализованные методы
+| Method | Description |
+|--------|-------------|
+| MyStringBuilder(String) | Constructor with initial text |
+| append(String) | Appends text to the end |
+| delete(int, int) | Removes substring from start to end |
+| undo() | Reverts the last operation |
+| toString() | Returns current text content |
 
-| Метод | Описание                    |
-|-------|-----------------------------|
-| `MyStringBuilder(String sb)` | Конструктор с начальной строкой |
-| `append(String sb)` | Добавляет строку в конец    |
-| `delete(int start, int end)` | Удаляет подстроку от start до end |
-| `undo()` | Отменяет последнюю операцию |
-| `toString()` | Возвращает текущую строку   |
-
----
-
-## 🏗️ Архитектура паттерна Snapshot
+## Snapshot Pattern Architecture
 
 ```text
 MyStringBuilder (Originator)
-├── String text                 // Текущее состояние
-├── Stack<Snapshot> history     // История состояний (Caretaker)
+├── String text
+├── Stack<Snapshot> history
 │
-├── Snapshot (Memento)          // Внутренний класс
-│   └── String text             // Сохранённое состояние
+├── Snapshot (Memento)
+│   └── String text
 │
-├── saveState()                 // Сохраняет состояние
-└── undo()                      // Восстанавливает состояние
+├── saveState()
+└── undo()
 ```
 
----
-
-## 🚀 Пример использования
+## Usage Example
 
 ```java
-MyStringBuilder sb = new MyStringBuilder("Hello")
-        .append(" World")   // "Hello World"
-        .delete(0, 5)      // "World"
-        .undo();           // "Hello World"
+MyStringBuilder builder = new MyStringBuilder("Hello")
+        .append(" World")
+        .delete(0, 5)
+        .undo();
 
-System.out.println(sb);    // Результат: Hello World
+System.out.println(builder); // Hello World
 ```
 
----
-
-## 📁 Структура проекта
+## Project Structure
 
 ```text
 src/task2_stringbuilder/
-├── Snapshot.java          # Хранит состояние (Memento)
-├── MyStringBuilder.java   # Основной класс (Originator)
-└── Main.java             # Демонстрация работы
+├── Snapshot.java
+├── MyStringBuilder.java
+└── Main.java
 ```
 
----
+## Snapshot Pattern Workflow
 
-## 🔑 Как работает паттерн Snapshot
+1. saveState() creates snapshot of current state and stores in history
+2. undo() removes last snapshot and restores previous state
+3. History stored in Stack<Snapshot> enables operations reversal
 
-1. **saveState()** — создаёт снимок текущего состояния и сохраняет в историю
-2. **undo()** — удаляет последний снимок и восстанавливает предыдущее состояние
-3. **История** — хранится в `Stack<Snapshot>`, что позволяет отменять операции в обратном порядке
-
----
-
-## 🧪 Запуск
+## Build and Run
 
 ```bash
 javac src/task2_stringbuilder/*.java
 java -cp src task2_stringbuilder.Main
 ```
 
-### Ожидаемый вывод:
+## Expected Output
 
-```text
-Результат: Hello World
+```
+Hello World
 ```
 
----
+## Summary
 
-## ✅ Вывод
-
-- Реализован паттерн **Snapshot (Memento)**
-- Добавлен метод **undo()** для отмены операций
-- Код минимален, но демонстрирует суть паттерна
+- Snapshot (Memento) pattern implemented
+- Undo functionality added
+- Minimal code demonstrating pattern essence

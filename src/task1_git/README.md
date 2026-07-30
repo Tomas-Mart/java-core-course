@@ -1,36 +1,34 @@
-# Задание #1: Настройка Git репозитория
+# Task 1: Git Repository Setup
 
-## 📝 Описание
+## Description
 
-Создание пустого Java проекта и настройка Git репозитория.
+Initialize Java project with Git version control.
 
-## 🎯 Цель
+## Objectives
 
-- ✅ Создать структуру проекта
-- ✅ Инициализировать Git репозиторий
-- ✅ Создать .gitignore
-- ✅ Создать README.md
-- ✅ Сделать первый коммит
-- ✅ Запушить на GitHub
+- Project structure creation
+- Git initialization
+- .gitignore configuration
+- README documentation
+- Initial commit
+- Remote repository push
 
-## 📁 Структура
+## Structure
 
 ```text
-src/task1-git/
-├── Main.java # Простой Java класс
-└── README.md # Документация
+src/task1_git/
+├── Main.java
+└── README.md
 ```
 
-## 🔧 Как проверить
-
-Запустить Main.java:
+## Build and Run
 
 ```bash
-javac Main.java
-java Main
+javac src/task1_git/Main.java
+java -cp src task1_git.Main
 ```
 
-Ожидаемый вывод:
+## Expected Output
 
 ```text
 Hello, Git!
