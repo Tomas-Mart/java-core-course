@@ -6,7 +6,7 @@
 
 - [x] task1-git - Настройка Git репозитория
 - [x] task2-stringbuilder - StringBuilder с паттерном Snapshot
-- [ ] task3-collections - Кастомные коллекции
+- [x] task3-collections - Кастомные коллекции
 - [ ] task4-concurrency - Многопоточность
 - [ ] task5-streams - Stream API
 - [ ] task6-maven - Maven проект
