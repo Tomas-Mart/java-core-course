@@ -18,7 +18,7 @@ Initialize Java project with Git version control.
 ```text
 src/task1_git/
 ├── Main.java
-└── README.md
+└── README.task4_concurrency.blocking_queue.README.md.md
 ```
 
 ## Build and Run
