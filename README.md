@@ -11,7 +11,7 @@
 - [x] task3-collections - Утилиты для работы с коллекциями
 - [x] task4-blocking-queue - Блокирующая очередь с wait/notify
 - [x] task5-bank-account - Многопоточный банковский счёт
-- [ ] task6-completable-future - Асинхронная агрегация с CompletableFuture
+- [x] task6-completable-future - Асинхронная агрегация с CompletableFuture
 - [ ] task7-streams - Stream API
 - [ ] task8-maven - Maven проект
 
