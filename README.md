@@ -1,29 +1,45 @@
-## Домашние задания
+# Java Core Course
+
+## Описание
 
 Репозиторий для выполнения домашних заданий по курсу Java Core.
 
-### Прогресс
+## Прогресс
 
 - [x] task1-git - Настройка Git репозитория
 - [x] task2-stringbuilder - StringBuilder с паттерном Snapshot
-- [x] task3-collections - Кастомные коллекции
-- [ ] task4-concurrency - Многопоточность
-- [ ] task5-streams - Stream API
-- [ ] task6-maven - Maven проект
+- [x] task3-collections - Утилиты для работы с коллекциями
+- [x] task4-blocking-queue - Блокирующая очередь с wait/notify
+- [x] task5-bank-account - Многопоточный банковский счёт
+- [ ] task6-completable-future - Асинхронная агрегация с CompletableFuture
+- [ ] task7-streams - Stream API
+- [ ] task8-maven - Maven проект
 
-### Структура
+## Структура проекта
 
 ```text
 src/
-├── task1-git/ # Задача 1: Git
-├── task2-stringbuilder/ # Задача 2: Java Core
-├── task3-collections/ # Задача 3: Collections
-├── task4-concurrency/ # Задача 4: Concurrency
-├── task5-streams/ # Задача 5: Stream API
-└── task6-maven/ # Задача 6: Maven
+├── task1_git/
+├── task2_stringbuilder/
+├── task3_collections/
+└── task4_concurrency/
+├── blocking_queue/
+│ ├── BlockingQueue.java
+│ ├── BlockingQueueExample.java
+│ └── README.md
+├── bank/
+│ ├── BankAccount.java
+│ ├── ConcurrentBank.java
+│ ├── ConcurrentBankExample.java
+│ └── README.md
+└── completable_future/
+├── ProductInfo.java
+├── DataAggregator.java
+├── CompletableFutureExample.java
+└── README.md
 ```
 
-### Технологии
+## Технологии
 
 - Java 17+
 - Git
