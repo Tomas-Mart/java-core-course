@@ -20,11 +20,13 @@ public final class BankAccount {
 
     public boolean withdraw(long amount) {
         if (amount <= 0) throw new IllegalArgumentException("Withdraw amount must be positive");
-        long currentBalance;
 
+        long currentBalance;
         do {
             currentBalance = balance.get();
-            if (currentBalance < amount) return false;
+            if (currentBalance < amount) {
+                return false;
+            }
         } while (!balance.compareAndSet(currentBalance, currentBalance - amount));
 
         return true;
