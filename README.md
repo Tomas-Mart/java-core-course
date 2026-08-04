@@ -13,7 +13,7 @@
 - [x] task5-bank-account - Многопоточный банковский счёт
 - [x] task6-completable-future - Асинхронная агрегация с CompletableFuture
 - [x] task7-streams-generate - Stream API: генерация чисел (топ-3 продукта)
-- [ ] task8-streams-aggregate - Stream API: агрегация и объединение (средние оценки)
+- [x] task8-streams-aggregate - Stream API: агрегация и объединение (средние оценки)
 - [ ] task9-maven - Maven проект
 
 ## Структура проекта
