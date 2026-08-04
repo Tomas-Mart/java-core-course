@@ -25,18 +25,10 @@ Asynchronous data aggregation from three independent sources: price, description
 
 ```java
 DataAggregator aggregator = new DataAggregator();
-ProductInfo info = aggregator.aggregateProductInfo("Ноутбук");
-```
-
-## Build and Run
-
-```bash
+ProductInfo info = aggregator.aggregateProductInfo("Ноутбук");Build and Run
+bash
 javac src/task4_concurrency/completable_future/*.java
 java -cp src task4_concurrency.completable_future.CompletableFutureExample
-```
-
-## Expected Output
-
-```text
-ProductInfo{name='Ноутбук', price=899.99, description='High-performance Ноутбук with advanced features', rating=4.7}
-```
+Expected Output
+text
+ProductInfo{name='Ноутбук', price=899.99, description='High-performance with advanced features', rating=4.7}
