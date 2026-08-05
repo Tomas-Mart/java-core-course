@@ -14,7 +14,7 @@
 - [x] task6-completable-future - Асинхронная агрегация с CompletableFuture
 - [x] task7-streams-generate - Stream API: генерация чисел (топ-3 продукта)
 - [x] task8-streams-aggregate - Stream API: агрегация и объединение (средние оценки)
-- [ ] task9-maven - Maven проект
+- [x] task9-maven - Maven многомодульный проект (GeometryLibrary)
 
 ## Структура проекта
 
@@ -59,6 +59,31 @@ src/
 │       ├── Student.java
 │       ├── StudentProcessor.java
 │       └── README.md
+├── task6_maven/
+│   ├── geometry-app/
+│   │   ├── pom.xml
+│   │   └── src/main/java/com/app/GeometryApp.java
+│   ├── geometry-library/
+│   │   ├── pom.xml
+│   │   └── src/main/java/com/geometry/
+│   │       ├── Shape.java
+│   │       ├── Circle.java
+│   │       ├── Rectangle.java
+│   │       ├── Square.java
+│   │       └── Triangle.java
+│   ├── geometry-utils/
+│   │   ├── pom.xml
+│   │   └── src/main/java/com/geometry/GeometryUtils.java
+│   ├── three-dimensional-shapes/
+│   │   ├── pom.xml
+│   │   └── src/main/java/com/geometry/
+│   │       ├── ThreeDimensionalShape.java
+│   │       ├── Cube.java
+│   │       ├── Sphere.java
+│   │       ├── Pyramid.java
+│   │       └── RectangularPrism.java
+│   ├── pom.xml
+│   └── README.md
 └── README.md
 ```
 
@@ -67,3 +92,4 @@ src/
 - Java 17+
 - Git
 - GitHub
+- Maven
